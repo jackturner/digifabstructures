@@ -1,0 +1,88 @@
+@font-face {font-family: 'DistrictLight';src: url('webfonts/1CE0F0_7_0.woff') format('woff');} 
+@font-face {font-family: 'DistrictMedium';src: url('webfonts/1CE0F0_1_0.woff') format('woff');} 
+
+*, *:before, *:after {
+    margin:             0;
+    padding:            0;
+    box-sizing:         inherit;
+    }
+  
+img {
+    border:             none;
+    }
+
+html {
+    box-sizing:         border-box;
+    position:           relative;
+    height:             100%;
+    }
+
+body {
+    font-family:        'DistrictLight', 'Helvetica Neue', Helvetica, arial, sans-serif;
+    font-size:          16px;
+    line-height:        1.4;
+    color:              #fff;
+    background-color:   #000;
+    background-image:   url(images/background.jpg);
+    background-size:    cover;
+    background-position:50% 50%;
+    width:              100%;
+    height:             100%;
+    position:           absolute;
+    }
+
+a { 
+    color:              inherit;
+    text-decoration:    inherit;
+    }
+
+#shadow {
+    position:           absolute;
+    bottom:             0;
+    left:               0;
+    width:              100%;
+    height:             160px;
+    background:         url(images/shadow.png);
+    }
+
+#logo {
+    position:           absolute;
+    top:                28px;
+    left:               34px;
+    }
+
+footer {
+    position:           absolute;
+    bottom:             0;
+    display:            flex;
+    width:              100%;
+    padding:            0 12px 14px 20px;
+    justify-content:    space-between;
+    }
+
+#contact-info {
+    display:            flex;
+    }
+
+#contact-info > *,
+#digifabshop-link {
+    display:            block;
+    margin:             0 14px;
+    white-space:        nowrap;
+    }
+
+#contact-info .street-address {
+    margin-right:       0;
+    }
+
+#contact-info .street-address:after {
+    content:            ', ';
+    }
+
+#contact-info .city-state-zip {
+    margin-left:        0;
+    }
+
+.email {
+    font-family:        'DistrictMedium';
+    }

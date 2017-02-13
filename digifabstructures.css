@@ -15,6 +15,7 @@ html {
     box-sizing:         border-box;
     position:           relative;
     height:             100%;
+    -webkit-text-size-adjust: 100%;
     }
 
 body {
@@ -97,8 +98,12 @@ footer {
 
 /* If less than 700px make the contact info switch to column */
 @media (max-width: 700px) {
+    #logo {
+        top:            16px;
+        left:           16px;
+    }
     footer {
-        padding-bottom: 30px;
+        padding:        0 2px 14px;
     }
     #contact-info {
         flex-direction: column;
